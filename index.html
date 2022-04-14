@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hulu</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check" viewBox="0 0 16 16">
+          <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+     </symbol>   
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+        </symbol>
+      </svg>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    
+</head>
+<body class="body">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+          <div></div>
+          <div class="col-md-3 text-end">
+            <button type="button" class="btn text-white">Log In</button>
+          </div>
+        </header>
+        <div class="px-4 py-5 my-5 text-center">
+            <p class="mb-1 fs-5 fw-bold text-green">BUNDLE WITH ANY HULU PLAN & SAVE</p>
+            <div class="col-lg-6 mx-auto">
+                <img src="./img/hululogo.png" alt="Hulu link" class="img-fluid" width="80%" height="50%">
+              <p class="text-light lead mb-1 fs-3 fw-bold">Get endless entertainment, live sports, and the shows and movies you love.</p>
+              <div class="input-group mb-3 d-grid d-sm-flex justify-content-sm-center">
+                <button class="btn btn-light btn-lg" type="button" id="button-addon2">GET THE DISNEY BUNDLE </button>
+              </div>
+              <p class="text-light"><button type="button" class="btn btn-link text-light">What's included?</button>See<button type="button" class="btn btn-link text-light">Bundle terms.</button></p>
+              <button type="button" class="btn btn-link text-light">Sign up for Hulu only</button>
+            </div>
+          </div>
+      <main class="container-fluid bg-black">
+        <div class="px-4 py-5 text-center">
+            <p class="text-green fw-bold">INCLUDED IN ALL PLANS</p>
+            <h2 class="pb-2 display-2 fw-bold text-light">All the TV You Love</h2>
+            <p class="fs-3 text-light">Stream full seasons of exclusive series, current-season episodes, hit movies, Hulu Originals, kids shows, and more.</p>
+            <div class="px-1 py-1">
+                <div class="row row-cols-2 row-cols-lg-4 align-items-stretch g-4 py-5">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url(./img/Bob.jpg); background-repeat: no-repeat; background-size: 100% 100%;">
+                      <div class="text-white text-shadow-2 text-start size">
+                          <h3 class="text-dark">Past & Current Seasons</h3>
+                        <h4 class="display-5 lh-1 fw-bold text-dark">TV Shows</h4>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url(./img/VS.jpg); background-repeat: no-repeat; background-size: 100% 100%;">
+                      <div class="text-white text-shadow-2 text-start size">
+                          <h3>New & Classic</h3>
+                        <h4 class="display-5 lh-1 fw-bold">Movies</h4>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-none d-md-block">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url(./img/Nine.jpg); background-repeat: no-repeat; background-size: 100% 100%;">
+                      <div class="text-shadow-2 text-start sizet">
+                          <h3 class="text-dark" >Groundbreaking</h3>
+                        <h4 class="display-5 lh-1 fw-bold text-dark">Hulu Originals</h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url(./img/Billions.jpg); background-repeat: no-repeat; background-size: 100% 100%;">
+                      <div class="text-shadow-1 text-start size">
+                        <h3>Add-on</h3>
+                        <h4 class="display-5 lh-1 fw-bold">Premiums</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div> 
+            <div class="px-4 py-5 my-5 text-center">
+                <p class="mb-1 fs-5 fw-bold text-green">HULU + LIVE TV, NOW WITH DISNEY+ AND ESPN+</p>
+                <div class="col-lg-9 mx-auto text-center">
+                    <h2 class="display-2 text-white fw-bolder">Live TV Makes It Better</h2>
+                  <p class="text-light fs-4">Make the switch from cable. 
+                      Get 75+ top channels on Hulu with your favorite live sports, news, and events - 
+                      plus the entire Hulu streaming library. Access endless entertainment with Disney+ 
+                      and live sports with ESPN+. All three for a new price of $69.99/month.
+                    </p>
+                  <p class="text-light fs-6">18+ only. Regional restrictions, blackouts and <a href="#" class="text-light">Live TV terms apply</a> 
+                      Access content from each service separately and access ESPN+ content via Hulu. 
+                      Location data required to watch certain content. Offer valid for eligible subscribers only. 
+                 </p>
+                  <button type="button" class="btn btn-link text-light btn-lg">VIEW CHANNELS IN YOUR AREA → </button>
+                </div>
+              </div>
+              <div class="container-fluid bg2 p-5">
+                <div class="col-lg-1"></div>
+              <div class="col-10 col-sm-8 col-lg-4"></div>
+              <div class="col-lg-6 text-start">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-start mb-md-0 fs-5">
+                    <li><a href="#" class="nav-link px-2 text-white">Live Sports</a></li>
+                    <li><a href="#" class="nav-link px-2 text-primary">Breaking News</a></li>
+                    <li><a href="#" class="nav-link px-2 text-primary">Biggest Events</a></li>
+                  </ul>
+                <h2 class="display-3 fw-bold lh-1 mb-3 text-white">Live Sports</h2>
+                <p class="lead text-white fs-3">Catch your games at home or on the go. Stream live games from major college and pro leagues including the NCAA®, NBA, NHL, NFL, and more.</p>
+              <div class="row d-none d-md-flex">
+                <div class="bg-white rounded-circle col-sm-3 col-md-1 col-lg-2 mx-2"><img src="./img/logo1.png" alt="" width="100%" height="45"></div>
+                <div class="bg-white rounded-circle col-sm-3 col-md-1 col-lg-2 mx-2"><img src="./img/logo2.png" alt="" width="100%" height="45"></div>
+                <div class="bg-white rounded-circle col-sm-3 col-md-1 col-lg-2 mx-2"><img src="./img/logo3.png" alt="" width="100%" height="45"></div>
+                <div class="bg-white rounded-circle col-sm-3 col-md-1 col-lg-2 mx-2"><img src="./img/logo4.png" alt="" width="100%" height="45"></div>
+              </div>
+              <p class="text-white fs-5">Live TV plan required. Regional restrictions, blackouts and additional terms apply.<button type="button" class="btn btn-link text-white">See Details</button></p>
+            </div>
+              <div class="col-lg-1"></div>
+            </div>
+        <div class="bg-light p-5">
+            <div class="col-sm-12 col-lg-9 mx-auto">
+            <h2 class="display-3 fw-bold lh-1 mb-3">Select Your Plan</h2>
+            <p class="fs-3">No hidden fees, equipment rentals, or installation appointments.
+               <b>Switch plans or cancel anytime.^^</b> </p>
+            </div>
+              <h2 class="display-6 text-center mb-4">Compare plans</h2>
+                <div class="thead row text-start bg-light">
+                    <div class="col-sm-5 col-lg-9 py-2">
+                       <div class="col-sm-1 col-lg-2">
+                           <img src="./img/bundles.svg" alt="bundle" width="150px" height="50px">
+                       </div> 
+                      <b class="fs-2">Bundle & Save</b> 
+                        Includes Hulu (plan of your choice), Disney+, and ESPN+.
+
+                    </div>
+                    <div class="col-sm-1 col-lg-3"></div>
+                    <div class="col-sm-2 col-lg-2 text-center">30 DAY FREE TRIAL Hulu <br> <br> <button type="button" class="btn btn-dark btn-lg">Select</button> </div>
+                    <div class="col-sm-2 col-lg-2 text-center">30 DAY FREE TRIAL Hulu (No Ads) <br> <button type="button" class="btn btn-dark btn-lg">Select</button></div>
+                    <div class="col-sm-2 col-lg-2 text-center">30 DAY FREE TRIAL Hulu (No Ads) <br> <button type="button" class="btn btn-dark btn-lg">Select</button></div>
+
+                </div>
+              <div class="table-responsive">
+                <table class="table text-center">
+                    <thead>
+                    <tr>
+                      <th style="width: 50%;" class="text-start">Montly Price</th>
+                      <th style="width: 15%;">$6.99/mo</th>
+                      <th style="width: 22%;">$12.99/mo</th>
+                      <th style="width: 22%;">$69.99/mo</th>
+                    </tr>
+                    </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="text-start">Streaming Library with thousands of TV episodes and movies</th>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Most new episodes the day after they air^</th>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Access to award-winning Hulu Originals</th>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Watch on your TV, laptop, phone, or tablet</th>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+    
+                    <tr>
+                      <th scope="row" class="text-start">Up to 6 user profiles</th>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Watch on 2 different screens at the same time</th>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+    
+                    <tr>
+                      <th scope="row" class="text-start">No ads in streaming library</th>
+                      <td></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Download and watch</th>
+                      <td></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                      <td></td>
+                    </tr>
+ 
+                    <tr>
+                      <th scope="row" class="text-start">Live TV with 75+ top channels. No cable required.</th>
+                      <td></td>
+                      <td></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Live TV guide to navigate channels</th>
+                      <td></td>
+                      <td></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+ 
+                    <tr>
+                      <th scope="row" class="text-start">Record Live TV with 50 hours of Cloud DVR storage</th>
+                      <td></td>
+                      <td></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Endless entertainment with Disney+, ad-free</th>
+                      <td></td>
+                      <td></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row" class="text-start">Live sports with ESPN+, now on Hulu</th>
+                      <td></td>
+                      <td></td>
+                      <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                    </tr>
+                    <tfoot class="text-start">
+                        <tr>
+                        <td>^For current-season shows in the streaming library only <br>
+                            ^^Switches from Live TV to Hulu take effect as of the next billing cycle   
+                        </td>
+                        </tr>
+                    </tfoot>
+                </table>
+              </div>
+        </div>
+      </main>
+
+
+
+      <div class="container-fluid bg-white py-5 px-5">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+              <h5>Browse</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Streaming Library</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Live TV</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Live News</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Live Sports</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+              <br>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">TV shows</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Movies</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Originals</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Networks</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Kids</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">FX</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+              <br>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">HBO Max™</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Cinemax</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Showtime</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">STARZ</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-sm-6  col-md-4 col-lg-2">
+                <br>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Hulu, Disney+, and ESPN+</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Hulu (No Ads), Disney+, and ESPN+</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Student Discount</a></li>
+                </ul>
+              </div>
+      
+              <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                <h5>Help</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Account & Billing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Plans & Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Supported Devices</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Accessibility</a></li>
+                </ul>
+            </div>
+
+              <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                <h5>About us</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Shop Hulu</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Press</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Jobs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Contact</a></li>
+                </ul>
+              </div>
+      
+          <div class="d-flex justify-content-start py-4 my-4 border-top">
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-dark" href="#facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#twitter"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#instagram"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            </ul>
+          </div>
+          <div class="d-flex flex-wrap">
+              <p class="px-4">© 2022 Hulu, LLC </p>
+              <a href="#" class="text-secondary px-4">About Ads</a>
+              <a href="#" class="text-secondary px-4">Terms of Use</a>
+              <a href="#" class="text-secondary px-4">Privacy Policy</a>
+              <a href="#" class="text-secondary px-4">Do Not Sell My Personal Information</a>
+              <a href="#" class="text-secondary px-4">Your California Privacy Rights</a>
+              <a href="#" class="text-secondary px-4">TV Parental Guidelines</a>
+              <a href="#" class="text-secondary px-4">Sitemap</a>
+          </div>
+        </footer>
+      </div>
+    <script src="./javascript/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.body{
+    background-image: url(../img/hulu\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 20%;
+    background-color: black;
+}
+.text-green{
+    color: #1CE783;
+}
+.size{
+    height: 415px;
+}
+.bg2{
+    background-image: url(../img/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: black; 
+}
+div.thead{
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  border: 2px solid white;
+}
+
+@media screen and (max-width: 800px) {
+    .body{
+        background-image: url(../img/hulu\ background.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-color: black;
+    }
+    .bg2{
+        background-image: url(../img/background2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black; 
+    }
+}
